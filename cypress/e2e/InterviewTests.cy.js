@@ -81,15 +81,6 @@ context("Interview Tests", () => {
   });
 
   it("Verify that the selected filters number is reflected on the listing and the results are matching the filtered criteria", () => {
-    cy.viewport(1920, 1080);
-    cy.visit({
-      url: "https://www.airbnb.com/",
-      auth: {
-        username: "firstboygaminghd@gmail.com",
-        password: "cacatpansat123",
-      },
-    });
-    cy.wait(5000);
 
     let destination = "Spain";
     let cardUnderTestIndex = 0;
